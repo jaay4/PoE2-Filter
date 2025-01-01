@@ -4,3 +4,8 @@ To Change the Waystone Tiers in Notepad, Use Keybind "CTRL + F" and search "Ways
 Also Remove the "#" on the left, you can check the google spreadsheet for a cheat sheet
 
 https://docs.google.com/spreadsheets/d/1ZbWTSe_LBnH-k8NW8RkmrFy_Vpl1MXKHl5rz5JDbYY4/edit?gid=0#gid=0
+
+Latest Updates
+
+- Added Enchanted maps to show on the filter, tier 13 and above
+- Moved Hide Waystone to the Waystone section, (This is because of the Update Listed Above, Consistency and not to clutter the override section)
