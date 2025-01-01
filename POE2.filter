@@ -1,0 +1,522 @@
+#================================================================================================================
+#OVERRIDE
+#================================================================================================================
+
+Hide # $type->gemhide
+	BaseType == "Uncut Skill Gem"
+	ItemLevel <= 19
+
+Hide # $type->gemhide
+	BaseType == "Uncut Spirit Gem"
+	ItemLevel <= 18
+
+Hide # $type->gemhide
+	BaseType == "Uncut Support Gem"
+	ItemLevel <= 3
+
+#================================================================================================================
+#CURRENCY-t1
+#================================================================================================================
+Show # $Currency-t1
+	Class == "Currency"
+	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb"
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    SetBorderColor 0 0 0 255
+    PlayAlertSound 6 300
+
+#================================================================================================================
+#t1 soulcore - divine+ price hence the white and red color
+#================================================================================================================
+
+Show # $RUNE-soulcore
+	Class == "Socketable"
+	BaseType == "Soul Core of Azcapa"
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Diamond
+
+#================================================================================================================
+#T2 Currency - more than ex but less than div
+#================================================================================================================
+
+Show # $type->currency $tier->t2
+	Class == "Currency"
+	BaseType == "Greater Jeweller's Orb" "Orb of Annulment" "Chaos Orb" "Gemcutter's Prism" "Orb of Chance"
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 229 82 29 255
+	MinimapIcon 0 Orange Star
+	PlayAlertSound 2 200
+	PlayEffect Orange
+
+#================================================================================================================
+#T3 currency - no sound - added 3 catalysts that are 2->1 or 5->1 ex
+#================================================================================================================
+
+Show # $type->currency $tier->t3
+	Class == "Currency"
+	BaseType == "Armourer's Scrap" "Chance Shard" "Arcanist's Etcher" "Artificer's Shard" "Exalted Orb" "Orb of Alchemy" "Regal Orb" "Vaal Orb" "Artificer's Orb" "Glassblower's Bauble" "Neural Catalyst" "Adaptive Catalyst" "Tul's Catalyst"
+	SetFontSize 30
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Brown
+
+Show # $type->currency $Sanctum-keys
+	BaseType == "Bronze Key" "Silver Key" "Gold Key"
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 14 109 51
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+Show # $type->currency $splinter
+	BaseType == "Breach Splinter" "Simulacrum Splinter"
+	SetFontSize 30
+	SetTextColor 215 165 255 255
+	SetBorderColor 215 165 255 255
+	SetBackgroundColor 76 11 103 255
+	MinimapIcon 0 Purple Kite
+	PlayEffect Purple
+
+#================================================================================================================
+#Added t1 essence aka Greaters
+#================================================================================================================
+
+Show # $type->currency $greateressence
+	Class == "Currency"
+	BaseType == "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of Torment" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Ruin" "Greater Essence of Battle" "Greater Essence of Sorcery" "Greater Essence of Haste" "Greater Essence of the Infinite"
+	SetFontSize 30
+	SetTextColor 196 254 255
+	SetBorderColor 60 251 255 255
+	SetBackgroundColor 43 173 176 255
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show # $type->currency $t2essence
+	Class == "Currency"
+	BaseType == "Essence of the Body" "Essence of the Mind" "Essence of Enhancement" "Essence of Torment" "Essence of Flames" "Essence of Ice" "Essence of Electricity" "Essence of Ruin" "Essence of Battle" "Essence of Sorcery" "Essence of Haste" "Essence of the Infinite"
+	SetFontSize 30
+	SetTextColor 132 253 255
+	SetBorderColor 60 251 255 255
+	SetBackgroundColor 75 113 163
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Cyan
+
+#================================================================================================================
+#DISTILLED/T2 SoulCore
+#================================================================================================================
+
+Show # $type->currency $distilled
+	Class == "Currency"
+	BaseType == "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Kite
+
+Show # $type->currency $distilled
+	Class == "Currency"
+	BaseType == "Distilled Despair"
+	SetFontSize 30
+	SetTextColor 252 195 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 242 0 255
+	MinimapIcon 0 Purple Kite
+	PlayAlertSound 2 300
+	PlayEffect Purple
+
+Show # $type->currency $distilled
+	Class == "Currency"
+	BaseType == "Distilled Disgust" "Distilled Envy" "Distilled Greed" "Distilled Guilt" "Distilled Ire" "Distilled Paranoia"
+	SetFontSize 30
+	SetTextColor 252 195 255 255
+	SetBorderColor 252 195 255 255
+	SetBackgroundColor 149 16 156 255
+	MinimapIcon 0 Purple Kite
+	PlayEffect Purple
+
+Show # $RUNE-soulcore
+    Class == "Socketable"
+	BaseType == "Soul Core of Tacati" "Soul Core of Opiloti" "Soul Core of Jiquani" "Soul Core of Zalatl" "Soul Core of Citaqualotl" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Topotante" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
+	SetFontSize 30
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 111 255 111 255
+	MinimapIcon 0 Green Raindrop
+
+#================================================================================================================
+#Uncut
+#================================================================================================================
+
+Show # $gem-t1
+	BaseType == "Uncut Spirit Gem"
+	ItemLevel = 20
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    SetBorderColor 0 0 0 255
+    PlayAlertSound 6 300
+
+Show # $gem-t1
+	BaseType == "Uncut Skill Gem"
+	ItemLevel >= 20
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    SetBorderColor 0 0 0 255
+    PlayAlertSound 6 300
+
+Show # $gem-t2
+	BaseType == "Uncut Spirit Gem"
+	ItemLevel = 19
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 229 82 29 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    PlayAlertSound 2 300
+
+#================================================================================================================
+#HIDE CURRENCY
+#================================================================================================================
+
+Hide # $type->currency-hidden
+	Class == "Currency"
+	BaseType == "Scroll of Wisdom" "Regal Shard" "Transmutation Shard" "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Blacksmith's Whetstone"
+	SetFontSize 20
+
+
+Hide # $type->currency $catalyst
+	Class == "Currency"
+	BaseType == "Flesh Catalyst" "Carapace Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Chayula's Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Adaptive Catalyst"
+	SetFontSize 20
+
+Hide # $RUNE-soulcore
+	Class == "Socketable"
+	SetFontSize 20
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 255 0 255
+
+Hide # $RUNE-soulcore
+	BaseType == "Gold"
+	SetFontSize 20
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 255 0 255
+
+#================================================================================================================
+#Uniques
+#================================================================================================================
+
+Show # $type->uniques-t1
+	Rarity Unique
+	BaseType == "Wyrm Quarterstaff" "Conqueror Plate" "Smuggler Coat" "Altar Robe" "Knight Armour" "Spired Greathelm" "Felt Cap" "Armoured Cap" "Closed Helm" "Moulded Mitts" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Crucible Tower Shield" "Garment" "Grand Regalia" "Grand Visage" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Gold Amulet" "Emerald Ring" "Ornate Belt" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring"
+	SetFontSize 30
+	SetBorderColor 0 0 255 255
+	SetTextColor 0 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # $type->uniques-multibase-good
+	Rarity Unique
+	BaseType == "Shrine Sceptre" "Silk Robe" "Explorer Armour" "Chain Tiara" "Tribal Mask" "Linen Wraps" "Omen Crest Shield" "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Gold Ring" "Heavy Belt" 
+	SetFontSize 30
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255 
+	SetBackgroundColor 175 96 37 255
+	MinimapIcon 0 Brown Star
+	PlayAlertSound 2 300
+	PlayEffect Brown
+
+Show # $type->uniques-decent
+	Rarity Unique
+	BaseType == "Chiming Staff" "Crude Bow" "Shortbow" "Dualstring Bow" "Pilgrim Vestments" "Wrapped Greathelm" "Lace Hood" "Gold Circlet" "Brimmed Helm" "Heavy Crown" "Spined Bracers" "Jewelled Gloves" "Rope Cuffs" "Goldcast Cuffs" "Torment Club" "Lattice Sandals" "Threaded Shoes" "Velour Shoes" "Grand Manchettes" "Grand Cuisses" "Amphora Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Rawhide Belt" "Long Quarterstaff" "Feathered Tiara"
+	SetFontSize 30
+	SetBorderColor 175 96 37
+	SetTextColor 175 96 37
+	SetBackgroundColor 53 13 13 255
+	MinimapIcon 0 Purple Moon
+	PlayAlertSound 3 300
+	PlayEffect Purple
+
+Hide # $type->uniques-hide
+	Rarity Unique
+	BaseType == "Wooden Club" "Smithing Hammer" "Slim Mace" "Plated Mace" "Torment Club" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Leaden Greathammer" "Crumbling Maul" "Wrapped Quarterstaff" "Gothic Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Bone Wand" "Volatile Wand" "Ashen Staff" "Gelid Staff" "Voltaic Staff" "Pyrophyte Staff" "Recurve Bow" "Makeshift Crossbow" "Tense Crossbow" "Rattling Sceptre" "Omen Sceptre" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Champion Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Keth Raiment" "Votive Raiment" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Scale Mail" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Gilded Vestments" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Rusted Greathelm" "Soldier Greathelm" "Elite Greathelm" "Warrior Greathelm" "Shabby Hood" "Hunter Hood" "Covert Hood" "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Spiritbone Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Riveted Mitts" "Tempered Mitts" "Suede Bracers" "Firm Bracers" "Sectioned Bracers" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Intricate Gloves" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Aged Cuffs" "Gauze Wraps" "Rough Greaves" "Iron Greaves" "Trimmed Greaves" "Stone Greaves" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Straw Sandals" "Wrapped Sandals" "Silk Slippers" "Feathered Sandals" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Secured Leggings" "Hunting Shoes" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Hardwood Targe" "Pelage Targe" "Crescent Targe" "Emblem Crest Shield" "Jingling Crest Shield" "Jingling Crest Shield" "Twig Focus" "Woven Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Broadhead Quiver" "Fire Quiver" "Visceral Quiver" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Iron Ring" "Ruby Ring" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Mail Belt" "Fine Belt" "Attuned Wand"
+	SetFontSize 20
+
+Show # $type->uniques
+	Rarity Unique
+	Class == "Body Armour" "Jewels" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Flails" "Spears" "Traps" "Fishing Rod" "Sceptres"
+	SetFontSize 30
+	SetBorderColor 0 0 0 255
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 158 61 69 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+    SetBorderColor 0 0 0 255
+
+#================================================================================================================
+#ITEMS-BASES
+#================================================================================================================
+
+Show # $Jewels
+	Class == "Jewels"
+	SetFontSize 30
+	SetBackgroundColor 159 0 0 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show # $Base-Chance
+	Rarity Normal
+	BaseType == "Sapphire Ring" "Heavy Belt" "Stellar Amulet" "Emerald Ring"
+	SetFontSize 30
+	SetBackgroundColor 150 90 70 255
+    SetBorderColor 255 178 135 255
+    SetTextColor 255 178 135 255
+
+Show # $Breach-Ring
+	BaseType == "Breach Ring"
+	SetFontSize 30
+	SetBackgroundColor 159 0 0 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show # $Cool Bases
+	BaseType == "Golden Mantle" "Golden Bracers" "Golden Caligae" "Golden Wreath" "Golden Visage" "Golden Flame" "Fishing Rod"
+	SetFontSize 30
+	SetBackgroundColor 0 255 192 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+#================================================================================================================
+#ITEMS-BASES-CRAFTING-OR-SELL
+#================================================================================================================
+
+Show # $Crafting-Bases
+	Rarity Normal
+	BaseType == "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Lizardscale Boots" "Expert Hunting Shoes" "Expert Stacked Sabatons" "Expert Stone Greaves"
+	ItemLevel >= 82
+	SetFontSize 30
+	SetBackgroundColor 0 255 192 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show # $Crafting-84>bases
+	BaseType == "Chiming Staff"
+	ItemLevel >= 84
+	SetFontSize 30
+	SetBackgroundColor 0 255 192 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show # $Crafting-81>bases
+	BaseType == "Siphoning wand" "Attuned Wand"
+	Rarity Normal
+	ItemLevel >= 81
+	SetFontSize 30
+	SetBackgroundColor 0 255 192 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show
+	BaseType == "Golden Charm" "Thawing Charm" "Antidote Charm" "Amethyst Charm" "Stone Charm"
+	ItemLevel >= 81
+	SetFontSize 30
+	SetBackgroundColor 255 0 179 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+Show
+	Class == "Charm"
+	Quality >= 10
+	ItemLevel >= 78
+	
+	SetBackgroundColor 255 0 179 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+#================================================================================================================
+#ITEMS-RARES
+#================================================================================================================
+
+Show # $Rares->t1
+	Rarity Rare
+	BaseType ==  "Expert Dualstring Bow" "Expert Zealot Bow" "Expert Plumed Focus" "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Waxed Jacket" "Expert Shaman Mantle" "Expert Pelt Mantle" "Expert Scale Mail" "Expert Cloaked Mail" "Expert Rogue Armour" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Steel Plate" "Expert Iron Cuirass" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Primed Quiver"
+	SetFontSize 30
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 82 91 245 255
+
+Show # $Rares
+	Rarity Rare
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Flails" "Spears" "Traps" "Fishing Rod" "Sceptres"
+	SetFontSize 30
+	SetBackgroundColor 0 0 0 255
+    SetBorderColor 192 255 0 255
+    SetTextColor 192 255 0 255
+
+Show # $Rares
+	Rarity Rare
+	Class == "rings" "belts" "Amulets"
+	SetFontSize 30
+	SetBackgroundColor 159 0 0 255
+    SetBorderColor 0 0 0 255
+    SetTextColor 0 0 0 255
+
+#================================================================================================================
+#ITEMS HIDDEN
+#================================================================================================================
+
+Hide # $Magic-normal-hidden
+	Rarity <= Magic
+	Class == "Body Armour" "Jewels" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Sceptres"
+	AreaLevel >= 65
+
+#================================================================================================================
+#WAYSTONE
+#================================================================================================================
+
+Show # %D6 $type->waystone->enchanted $tier->t1
+	AnyEnchantment True
+	WaystoneTier >= 13
+	Class == "Waystones"
+	SetFontSize 30
+	SetTextColor 145 30 220 255
+	SetBorderColor 145 30 220 255
+	SetBackgroundColor 235 220 245 255
+	PlayAlertSound 5 300
+	PlayEffect Purple
+	MinimapIcon 0 Purple Square
+
+Hide # %H4 $type->maps $tier->maps_d_t4
+	WaystoneTier <= 14
+	Class == "waystones"
+	SetFontSize 20
+
+Show # %H4 $type->maps $tier->maps_d_t4
+	Class == "waystones"
+	SetFontSize 30
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 2 White Square
+
+#================================================================================================================
+#fragment
+#================================================================================================================
+
+Show # $C#
+	BaseType == "An Audience with the King"
+	SetFontSize 30
+	SetTextColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+    SetBorderColor 0 0 0 255
+    PlayAlertSound 6 300
+
+Show # $type->fragments
+	BaseType == "Expedition Logbook" "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet" "Ritual Precursor Tablet" "Precursor Tablet"
+	SetFontSize 30
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayAlertSound 5 300
+	PlayEffect Pink
+	MinimapIcon 2 Pink Diamond
+
+Show # $type->fragments->omen
+	BaseType == "Omen of Refreshment" "Omen of Resurgence" "Omen of Amelioration" "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Alchemy" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation" "Omen of Dextral Coronation" "Omen of Corruption" "Omen of Greater Exaltation" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Annulment" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+	SetFontSize 30
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect Orange
+	MinimapIcon 2 Orange Diamond
+
+Show # $type->currency $Fragment
+	BaseType == "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Breachstone" "Simulacrum"
+	SetFontSize 30
+	SetTextColor 215 165 255 255
+	SetBorderColor 215 165 255 255
+	SetBackgroundColor 76 11 103 255
+	MinimapIcon 0 Purple Kite
+	PlayAlertSound 2 300
+	PlayEffect Purple
+
+Show # $type->fragments->trial
+	BaseType == "Djinn Barya" "Test of Strength Barya" "Test of Will Barya" "Test of Cunning Barya" "Test of Time Barya"
+	SetFontSize 30
+	SetTextColor 130 218 255 255
+	SetBorderColor 130 218 255 255
+	SetBackgroundColor 23 23 125 255
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Cross
+
+Hide # $type->fragments->trial
+	BaseType == "Inscribed Ultimatum"
+	SetFontSize 30
+	SetTextColor 130 218 255 255
+	SetBorderColor 130 218 255 255
+	SetBackgroundColor 23 23 125 255
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Cross
+
+#Show # $type->fragments->
+#	Class == "Fragments"
+#	BaseType == "Ancient Crisis Fragment" "Faded Crisis Fragment" "Weathered Crisis Fragment"
+#	SetFontSize 30
+#	SetTextColor 255 0 0 255
+#	SetBackgroundColor 255 255 255 255
+#	PlayEffect Red
+#	MinimapIcon 0 Red Star
+#	SetBorderColor 0 0 0 255
+#	PlayAlertSound 6 300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
