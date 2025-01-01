@@ -9,9 +9,7 @@ There is now a cheat sheet you can check out for the filter:
 https://docs.google.com/spreadsheets/d/1ZbWTSe_LBnH-k8NW8RkmrFy_Vpl1MXKHl5rz5JDbYY4/edit?usp=sharing
 **Shows colours and how to hide Waystone/gem tier -- Shows how to change Font Size of Filtered items**
 
-** If you want update notifications for filter updates, go to this discord link, check pinged comment in poe2filter channel: https://discord.gg/SJTnsFFZjc and click the emoji " :scroll: " on the pinned message to receive notification **
-
-https://docs.google.com/spreadsheets/d/1ZbWTSe_LBnH-k8NW8RkmrFy_Vpl1MXKHl5rz5JDbYY4/edit?gid=0#gid=0
+If you want update notifications for filter updates, go to this discord link, check pinged comment in poe2filter channel: https://discord.gg/SJTnsFFZjc and click the emoji " :scroll: " on the pinned message to receive notification
 
 Latest Updates
 
