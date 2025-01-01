@@ -2,17 +2,17 @@
 #OVERRIDE
 #================================================================================================================
 
-Hide # $type->gemhide
-	BaseType == "Uncut Skill Gem"
-	ItemLevel <= 19
+#Hide # $type->gemhide
+#	BaseType == "Uncut Skill Gem"
+#	ItemLevel <= 19
 
-Hide # $type->gemhide
-	BaseType == "Uncut Spirit Gem"
-	ItemLevel <= 18
+#Hide # $type->gemhide
+#	BaseType == "Uncut Spirit Gem"
+#	ItemLevel <= 18
 
-Hide # $type->gemhide
-	BaseType == "Uncut Support Gem"
-	ItemLevel <= 3
+#Hide # $type->gemhide
+#	BaseType == "Uncut Support Gem"
+#	ItemLevel <= 3
 
 #================================================================================================================
 #CURRENCY-t1
@@ -412,10 +412,10 @@ Show # %D6 $type->waystone->enchanted $tier->t1
 	PlayEffect Purple
 	MinimapIcon 0 Purple Square
 
-Hide # %H4 $type->maps $tier->maps_d_t4
-	WaystoneTier <= 14
-	Class == "waystones"
-	SetFontSize 20
+#Hide # %H4 $type->maps $tier->maps_d_t4
+#	WaystoneTier <= 14
+#	Class == "waystones"
+#	SetFontSize 20
 
 Show # %H4 $type->maps $tier->maps_d_t4
 	Class == "waystones"
