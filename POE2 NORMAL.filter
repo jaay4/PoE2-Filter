@@ -17,7 +17,6 @@
 #================================================================================================================
 #CURRENCY-t1
 #================================================================================================================
-
 Show # $Currency-t1
 	Class == "Currency"
 	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb"
@@ -26,8 +25,8 @@ Show # $Currency-t1
 	SetBackgroundColor 255 255 255 255
 	PlayEffect Red
 	MinimapIcon 0 Red Star
-    SetBorderColor 0 0 0 255
-    PlayAlertSound 6 300
+	SetBorderColor 0 0 0 255
+	PlayAlertSound 6 300
 
 #================================================================================================================
 #t1 soulcore - divine+ price hence the white and red color
@@ -288,30 +287,38 @@ Show # $Jewels
 	Class == "Jewels"
 	SetFontSize 30
 	SetBackgroundColor 159 0 0 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
 Show # $Base-Chance
 	Rarity Normal
-	BaseType == "Sapphire Ring" "Heavy Belt" "Stellar Amulet" "Emerald Ring"
+	BaseType == "Sapphire Ring" "Emerald Ring"
 	SetFontSize 30
 	SetBackgroundColor 150 90 70 255
-    SetBorderColor 255 178 135 255
-    SetTextColor 255 178 135 255
+	SetBorderColor 255 178 135 255
+	SetTextColor 255 178 135 255
+
+Show # $Base-Alc
+	Rarity Normal
+	BaseType == "Stellar Amulet"
+	SetFontSize 30
+	SetBackgroundColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
 
 Show # $Breach-Ring
 	BaseType == "Breach Ring"
 	SetFontSize 30
 	SetBackgroundColor 159 0 0 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
 Show # $Cool Bases
 	BaseType == "Golden Mantle" "Golden Bracers" "Golden Caligae" "Golden Wreath" "Golden Visage" "Golden Flame" "Fishing Rod"
 	SetFontSize 30
 	SetBackgroundColor 0 255 192 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
 #================================================================================================================
 #ITEMS-BASES-CRAFTING-OR-SELL
@@ -319,22 +326,22 @@ Show # $Cool Bases
 
 Show # $Crafting-Bases
 	Rarity Normal
-	BaseType == "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Lizardscale Boots" "Expert Hunting Shoes" "Expert Stacked Sabatons" "Expert Stone Greaves"
+	BaseType == "Expert Feathered Sandals" "Expert Waxed Jacket" "Expert Lizardscale Boots" "Expert Hunting Shoes"
 	ItemLevel >= 82
 	SetFontSize 30
 	SetBackgroundColor 0 255 192 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
-Show # $Crafting-84>bases
+Show # $Crafting-84>bases ## grants lvl19 sigil of power & with +6all spell its 20d+
 	BaseType == "Chiming Staff"
 	ItemLevel >= 84
 	SetFontSize 30
 	SetBackgroundColor 0 255 192 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
-Show # $Crafting-81>bases
+Show # $Crafting-81>bases ## bases sell for 10ex+
 	BaseType == "Siphoning wand" "Attuned Wand"
 	Rarity Normal
 	ItemLevel >= 81
@@ -344,21 +351,20 @@ Show # $Crafting-81>bases
     SetTextColor 0 0 0 255
 
 Show
-	BaseType == "Golden Charm" "Thawing Charm" "Antidote Charm" "Amethyst Charm" "Stone Charm"
+	BaseType == "Golden Charm" "Thawing Charm" "Stone Charm"
 	ItemLevel >= 81
 	SetFontSize 30
 	SetBackgroundColor 255 0 179 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
 Show
 	Class == "Charm"
 	Quality >= 10
 	ItemLevel >= 78
-	
 	SetBackgroundColor 255 0 179 255
-    SetBorderColor 0 0 0 255
-    SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetTextColor 0 0 0 255
 
 #================================================================================================================
 #ITEMS-RARES
