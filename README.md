@@ -7,6 +7,9 @@ You can join the discord here, directly to the filter channel: https://discord.g
 
 ## There is now a "Endgame" strict filter you can see by the file name, differences are listed below
 
+Changes Made
+- Fixed Greater Jewellers Orb on Both filters to be in T2 and not t1
+
 Endgame Filter
 - Stricter rare filtering (specific expert bases only showing).
 - Removed Rare Belts from rare filtering
