@@ -19,7 +19,7 @@ Hide # $type->gemhide
 #================================================================================================================
 Show # $Currency-t1
 	Class == "Currency"
-	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb"
+	BaseType == "Divine Orb" "Mirror of Kalandra" "Perfect Jeweller's Orb"
 	SetFontSize 30
 	SetTextColor 255 0 0 255
 	SetBackgroundColor 255 255 255 255
