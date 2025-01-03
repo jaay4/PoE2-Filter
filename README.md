@@ -3,6 +3,8 @@
 To Change the Waystone Tiers in Notepad, Use Keybind "CTRL + F" and search "Waystone" change the Waystone tier to the tier you dont want to see and below, For example: WaystoneTier <= 13 will hide tier 13 and below
 Also Remove the "#" on the left, you can check the google spreadsheet for a cheat sheet
 
+You can join the discord here, directly to the filter channel: https://discord.gg/SJTnsFFZjc
+
 ## There is now a "Endgame" strict filter you can see by the file name, differences are listed below
 
 Endgame Filter
