@@ -59,7 +59,7 @@ Show # $type->currency $tier->t2
 	PlayEffect Orange
 
 #================================================================================================================
-#T3 currency - no sound - added 3 catalysts that are 2->1 or 5->1 ex
+#T3 currency - no sound
 #================================================================================================================
 
 Show # $type->currency $tier->t3
@@ -232,7 +232,7 @@ Hide # $RUNE-soulcore
 
 Show # $type->uniques-t1
 	Rarity Unique
-	BaseType == "Ornate Belt" "Smuggler Coat" "Armoured Cap" "Moulded Mitts" "Furtive Wraps" "Grand Regalia" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Heavy Belt"
+	BaseType == "Ornate Belt" "Smuggler Coat" "Tribal Mask" "Armoured Cap" "Moulded Mitts" "Furtive Wraps" "Grand Regalia" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Heavy Belt"
 	SetFontSize 30
 	SetBorderColor 0 0 255 255
 	SetTextColor 0 0 255 255
@@ -284,9 +284,9 @@ Show # $type->Corrupt Uniques
 	MinimapIcon 0 Orange Star
 	PlayEffect Orange
 
-Show # $type->Boss Drop Uniques
+Show # $type->Boss Drop Uniques-IF YOU CHANGE SHOW TO HIDE, MAKE SURE TO PRESS ALT ON BOSSES
 	Rarity Unique
-	BaseType == "Velour Shoes" "Grand Cuisses" "Shrine Sceptre" "Explorer Armour" "Chain Tiara" "Tribal Mask" "Linen Wraps" "Omen Crest Shield" "Grand Visage" "Garment" "Closed Helm" "Knight Armour" "Wyrm Quarterstaff"
+	BaseType == "Velour Shoes" "Grand Cuisses" "Shrine Sceptre" "Explorer Armour" "Chain Tiara" "Linen Wraps" "Omen Crest Shield" "Grand Visage" "Garment" "Closed Helm" "Knight Armour" "Wyrm Quarterstaff"
 	SetFontSize 30
 	SetBorderColor 0 0 0 255
 	SetTextColor 255 255 255 255
