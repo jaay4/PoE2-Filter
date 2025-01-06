@@ -232,18 +232,30 @@ Hide # $RUNE-soulcore
 
 Show # $type->uniques-t1
 	Rarity Unique
-	BaseType == "Wyrm Quarterstaff" "Conqueror Plate" "Smuggler Coat" "Altar Robe" "Knight Armour" "Spired Greathelm" "Felt Cap" "Armoured Cap" "Closed Helm" "Moulded Mitts" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Crucible Tower Shield" "Garment" "Grand Regalia" "Grand Visage" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Gold Amulet" "Emerald Ring" "Ornate Belt" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring"
+	BaseType == "Ornate Belt" "Smuggler Coat" "Armoured Cap" "Moulded Mitts" "Furtive Wraps" "Grand Regalia" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Heavy Belt"
 	SetFontSize 30
 	SetBorderColor 0 0 255 255
 	SetTextColor 0 0 255 255
 	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 1 300
+	PlayAlertSound 6 300
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
+Show # $type->uniques-t2
+	Rarity Unique
+	BaseType == "Emerald Ring" "Gold Amulet" "Crucible Tower Shield" "Stone Tower Shield" "Fine Bracers" "Conqueror Plate"
+	SetFontSize 30
+	SetBorderColor 255 255 255
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	MinimapIcon 0 Yellow Star
+	PlayEffect Red
+    SetBorderColor 0 0 0 255
+
 Show # $type->uniques-multibase-good
 	Rarity Unique
-	BaseType == "Shrine Sceptre" "Silk Robe" "Explorer Armour" "Chain Tiara" "Tribal Mask" "Linen Wraps" "Omen Crest Shield" "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Gold Ring" "Heavy Belt" 
+	BaseType == "Silk Robe" "Crimson Amulet" "Azure Amulet" "Amber Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Gold Ring"
 	SetFontSize 30
 	SetBorderColor 0 0 0 255
 	SetTextColor 0 0 0 255 
@@ -252,29 +264,49 @@ Show # $type->uniques-multibase-good
 	PlayAlertSound 2 300
 	PlayEffect Brown
 
-Show # $type->uniques-decent
+Show # $type->t3
 	Rarity Unique
-	BaseType == "Chiming Staff" "Crude Bow" "Shortbow" "Dualstring Bow" "Pilgrim Vestments" "Wrapped Greathelm" "Lace Hood" "Gold Circlet" "Brimmed Helm" "Heavy Crown" "Spined Bracers" "Jewelled Gloves" "Rope Cuffs" "Goldcast Cuffs" "Torment Club" "Lattice Sandals" "Threaded Shoes" "Velour Shoes" "Grand Manchettes" "Grand Cuisses" "Amphora Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Rawhide Belt" "Long Quarterstaff" "Feathered Tiara"
+	BaseType == "Brimmed Helm" "Torment Club" "Amphora Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Feathered Tiara" "Felt Cap" "Spired Greathelm" "Altar Robe" "Threaded Shoes"
 	SetFontSize 30
-	SetBorderColor 175 96 37
-	SetTextColor 175 96 37
+	SetBorderColor 175 96 37 255
+	SetTextColor 175 96 37 255
 	SetBackgroundColor 53 13 13 255
-	MinimapIcon 0 Purple Moon
-	PlayAlertSound 3 300
+	MinimapIcon 0 Brown Star
 	PlayEffect Purple
 
-Hide # $type->uniques-hide
+Show # $type->Corrupt Uniques
 	Rarity Unique
-	BaseType == "Wooden Club" "Smithing Hammer" "Slim Mace" "Plated Mace" "Torment Club" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Leaden Greathammer" "Crumbling Maul" "Wrapped Quarterstaff" "Gothic Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Bone Wand" "Volatile Wand" "Ashen Staff" "Gelid Staff" "Voltaic Staff" "Pyrophyte Staff" "Recurve Bow" "Makeshift Crossbow" "Tense Crossbow" "Rattling Sceptre" "Omen Sceptre" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Champion Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Keth Raiment" "Votive Raiment" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Scale Mail" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Gilded Vestments" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Rusted Greathelm" "Soldier Greathelm" "Elite Greathelm" "Warrior Greathelm" "Shabby Hood" "Hunter Hood" "Covert Hood" "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Spiritbone Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Riveted Mitts" "Tempered Mitts" "Suede Bracers" "Firm Bracers" "Sectioned Bracers" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Intricate Gloves" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Aged Cuffs" "Gauze Wraps" "Rough Greaves" "Iron Greaves" "Trimmed Greaves" "Stone Greaves" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Straw Sandals" "Wrapped Sandals" "Silk Slippers" "Feathered Sandals" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Secured Leggings" "Hunting Shoes" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Hardwood Targe" "Pelage Targe" "Crescent Targe" "Emblem Crest Shield" "Jingling Crest Shield" "Jingling Crest Shield" "Twig Focus" "Woven Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Broadhead Quiver" "Fire Quiver" "Visceral Quiver" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Iron Ring" "Ruby Ring" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Mail Belt" "Fine Belt" "Attuned Wand"
-	SetFontSize 20
+	BaseType == "Crude Bow" "Burnished Gauntlets" "Shortbow" "Dualstring Bow" "Pilgrim Vestments" "Wrapped Greathelm" "Gold Circlet" "Heavy Crown" "Spined Bracers" "Jewelled Gloves" "Rope Cuffs" "Lattice Sandals" "Grand Manchettes" "Long Quarterstaff" "Rawhide Belt" "Spiked Club"
+	SetFontSize 30
+	SetBorderColor 255 255 255 255
+	SetTextColor 255 255 255 255
+	SetBackgroundColor 112 10 10 255
+	MinimapIcon 0 Orange Star
+	PlayEffect Orange
 
-Show # $type->uniques
+Show # $type->Boss Drop Uniques
 	Rarity Unique
-	Class == "Body Armour" "Jewels" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Flails" "Spears" "Traps" "Fishing Rod" "Sceptres"
+	BaseType == "Velour Shoes" "Grand Cuisses" "Shrine Sceptre" "Explorer Armour" "Chain Tiara" "Tribal Mask" "Linen Wraps" "Omen Crest Shield" "Grand Visage" "Garment" "Closed Helm" "Knight Armour" "Wyrm Quarterstaff"
 	SetFontSize 30
 	SetBorderColor 0 0 0 255
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 158 61 69 255
+	PlayAlertSound 1 300
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
+Hide # $type->uniques-hide
+	Rarity Unique
+	BaseType == "Chiming Staff" "Goldcast Cuffs" "Lace Hood" "Solid Mask" "Blazon Crest Shield" "Wooden Club" "Smithing Hammer" "Slim Mace" "Plated Mace" "Felled Greatclub" "Oak Greathammer" "Forge Maul" "Studded Greatclub" "Leaden Greathammer" "Crumbling Maul" "Wrapped Quarterstaff" "Gothic Quarterstaff" "Crescent Quarterstaff" "Steelpoint Quarterstaff" "Bone Wand" "Volatile Wand" "Ashen Staff" "Gelid Staff" "Voltaic Staff" "Pyrophyte Staff" "Recurve Bow" "Makeshift Crossbow" "Tense Crossbow" "Rattling Sceptre" "Omen Sceptre" "Rusted Cuirass" "Fur Plate" "Iron Cuirass" "Raider Plate" "Maraketh Cuirass" "Steel Plate" "Full Plate" "Vaal Cuirass" "Champion Cuirass" "Leather Vest" "Quilted Vest" "Pathfinder Coat" "Rhoahide Coat" "Studded Vest" "Scout's Vest" "Serpentscale Coat" "Tattered Robe" "Feathered Robe" "Hexer's Robe" "Bone Raiment" "Keth Raiment" "Votive Raiment" "Chain Mail" "Rogue Armour" "Vagabond Armour" "Cloaked Mail" "Scale Mail" "Mail Vestments" "Shaman Mantle" "Ironclad Vestments" "Gilded Vestments" "Hermit Garb" "Waxed Jacket" "Marabout Garb" "Wayfarer Jacket" "Anchorite Garb" "Rusted Greathelm" "Soldier Greathelm" "Elite Greathelm" "Warrior Greathelm" "Shabby Hood" "Hunter Hood" "Covert Hood" "Twig Circlet" "Wicker Tiara" "Beaded Circlet" "Guarded Helm" "Visored Helm" "Cowled Helm" "Shielded Helm" "Iron Crown" "Horned Crown" "Cultist Crown" "Martyr Crown" "Spiritbone Crown" "Hewn Mask" "Face Mask" "Hooded Mask" "Veiled Mask" "Riveted Mitts" "Tempered Mitts" "Suede Bracers" "Firm Bracers" "Sectioned Bracers" "Torn Gloves" "Sombre Gloves" "Stitched Gloves" "Intricate Gloves" "Ringmail Gauntlets" "Layered Gauntlets" "Doubled Gauntlets" "Aged Cuffs" "Gauze Wraps" "Rough Greaves" "Iron Greaves" "Trimmed Greaves" "Stone Greaves" "Laced Boots" "Embossed Boots" "Steeltoe Boots" "Lizardscale Boots" "Straw Sandals" "Wrapped Sandals" "Silk Slippers" "Feathered Sandals" "Mail Sabatons" "Braced Sabatons" "Stacked Sabatons" "Secured Leggings" "Hunting Shoes" "Splintered Tower Shield" "Painted Tower Shield" "Braced Tower Shield" "Effigial Tower Shield" "Rampart Tower Shield" "Hardwood Targe" "Pelage Targe" "Crescent Targe" "Emblem Crest Shield" "Jingling Crest Shield" "Jingling Crest Shield" "Twig Focus" "Woven Focus" "Engraved Focus" "Tonal Focus" "Crystal Focus" "Broadhead Quiver" "Fire Quiver" "Visceral Quiver" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Iron Ring" "Ruby Ring" "Linen Belt" "Wide Belt" "Long Belt" "Plate Belt" "Mail Belt" "Fine Belt" "Attuned Wand"
+	SetFontSize 20
+
+Show # $type->uniques-Untiered
+	Rarity Unique
+	Class == "Body Armour" "Jewels" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Flails" "Spears" "Traps" "Fishing Rod" "Sceptres"
+	SetFontSize 30
+	SetBackgroundColor 30 1 162
+	SetBorderColor 255 255 255
+	SetTextColor 255 255 255 255
 	PlayAlertSound 1 300
 	PlayEffect Red
     SetBorderColor 0 0 0 255
@@ -449,7 +481,7 @@ Show # $Rares
 
 Hide # $Magic-normal-hidden
 	Rarity <= Magic
-	Class == "Body Armour" "Jewels" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Sceptres"
+	Class == "Body Armour" "Boots" "Gloves" "Helmets" "rings" "belts" "Amulets" "Wands" "Life Flasks" "Mana Flasks" "Charms" "Quivers" "Shields" "One Hand Maces" "Staves" "Foci" "Bows" "Crossbows" "Quarterstaves" "Two Hand Maces" "Two Hand Swords" "Two Hand Axes" "One Hand Swords" "One Hand Axes" "Claws" "Daggers" "Sceptres"
 	AreaLevel >= 65
 
 #================================================================================================================
@@ -543,7 +575,6 @@ Hide # $type->fragments->trial
 	SetBorderColor 130 218 255 255
 	SetBackgroundColor 23 23 125 255
 	PlayEffect Cyan
-	MinimapIcon 0 Cyan Cross
 
 #Show # $type->fragments->
 #	Class == "Fragments"
