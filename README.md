@@ -8,29 +8,15 @@ You can join the discord here, directly to the filter channel: https://discord.g
 ## There is now a "Endgame" strict filter you can see by the file name, differences are listed below
 
 Changes Made
-- Fixed Greater Jewellers Orb on Both filters to be in T2 and not t1
+- Fixed T1 Unique Drop Sound to be a Tink.
+- Filtered more uniques from the filter.
+- Added a new Tier, T2 Uniques. This is for Multibase Uniques that are 1d or 20ex+.
+- Moved Heavy Belt to T1 Unique (2 unique drop from this but one is cheap boss drop from Trial Master, Headhunter is global).
+- Renamed "Decent Uniques" to "T3 Uniques" this is for items roughly 5-20ex that should sell quite well.
+- Fixed Unfiltered Uniques that were appearing on the filter.
+- The Unfiltered Colour/Text is now for Boss Uniques.
+- Unfiltered Uniques will now be Blue background and White Text/Border
 
-Endgame Filter
-- Stricter rare filtering (specific expert bases only showing).
-- Removed Rare Belts from rare filtering
-- Regals are now hidden
-- Removed the remaining catalyst that are showing on the filter ("Neural Catalyst" "Adaptive Catalyst" "Tul's Catalyst") just copy paste the items in bracket if you want to add them back
-- Tier 14 and below are hidden (This can be changed just by following instruction in the google doc).
-- Enchanted maps are now showing (This applies to Tier 13 and above).
-- Removed Heavy Belt as a chance item (HH is about 13d or less now; doesn't seem worth the chance for how rare it is)
-- Hidden Djinn Barya (Can always move this back to the trial show section in the filter if you want them to be shown, just do "CTRL+F trial to find)
-- Moved Stellar Amulet from chance to its own section for alcing (this whill be black background, white text/border)
-
-Normal Filter
-- Enchanted maps are now showing (This applies to Tier 13 and above).
-- Moved Stellar Amulet from chance to its own section for alcing (this whill be black background, white text/border).
-
-
-**- Cheat sheet now shows how to change Font Size of your Filtered Items**
 There is now a cheat sheet you can check out for the filter: 
 https://docs.google.com/spreadsheets/d/1ZbWTSe_LBnH-k8NW8RkmrFy_Vpl1MXKHl5rz5JDbYY4/edit?usp=sharing
 **Shows colours and how to hide Waystone/gem tier -- Shows how to change Font Size of Filtered items**
-
-**There is now a github link for the filter, if anyone has issues downloading from discord: https://github.com/jaay4/PoE2-Filter/tree/main**
-
-** If you want update notifications for filter updates, go to >>>>> PINNED MESSAGES <<<<< to receive notification by click the emoji " :scroll: " on the post pinned -- DO NOT REACT TO THIS POST YOU WILL NOT GET THE POE2FILTER ROLL. **
