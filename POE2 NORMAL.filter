@@ -232,7 +232,7 @@ Hide # $RUNE-soulcore
 
 Show # $type->uniques-t1
 	Rarity Unique
-	BaseType == "Ornate Belt" "Smuggler Coat" "Armoured Cap" "Moulded Mitts" "Furtive Wraps" "Grand Regalia" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Heavy Belt"
+	BaseType == "Ornate Belt" "Smuggler Coat" "Armoured Cap" "Tribal Mask" "Moulded Mitts" "Furtive Wraps" "Grand Regalia" "Timeless Jewel" "Ruby" "Diamond" "Vase Relic" "Incense Relic" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Heavy Belt"
 	SetFontSize 30
 	SetBorderColor 0 0 255 255
 	SetTextColor 0 0 255 255
@@ -286,7 +286,7 @@ Show # $type->Corrupt Uniques
 
 Show # $type->Boss Drop Uniques
 	Rarity Unique
-	BaseType == "Velour Shoes" "Grand Cuisses" "Shrine Sceptre" "Explorer Armour" "Chain Tiara" "Tribal Mask" "Linen Wraps" "Omen Crest Shield" "Grand Visage" "Garment" "Closed Helm" "Knight Armour" "Wyrm Quarterstaff"
+	BaseType == "Velour Shoes" "Grand Cuisses" "Shrine Sceptre" "Explorer Armour" "Chain Tiara" "Linen Wraps" "Omen Crest Shield" "Grand Visage" "Garment" "Closed Helm" "Knight Armour" "Wyrm Quarterstaff"
 	SetFontSize 30
 	SetBorderColor 0 0 0 255
 	SetTextColor 255 255 255 255
